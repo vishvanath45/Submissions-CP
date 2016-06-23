@@ -1,4 +1,5 @@
 #include<conio.h>
+//this is bubble sort
 
 void main()
 { int i,n,j,s,x;
