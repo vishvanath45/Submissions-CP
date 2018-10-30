@@ -1,9 +1,9 @@
 //CC RESCALC
 
 #include<stdio.h>
-#include<algorithm>
+
 using namespace std;
-#include<iostream>
+
 #include<string.h>
 
 int main()

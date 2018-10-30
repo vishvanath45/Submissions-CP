@@ -28,6 +28,8 @@ found=t.find("WUB");
 }
 cout<<t;
 
+int
+
 
 return 0;
 
