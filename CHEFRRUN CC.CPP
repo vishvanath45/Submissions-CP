@@ -75,7 +75,7 @@ parr[t]= {0};
                 counter++;
             }
 
-            cout<<"answer is "<<counter<<"\n";
+            cout<</*"answer is "<<*/counter<<"\n";
 
             return 0;
 

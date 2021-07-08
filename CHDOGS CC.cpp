@@ -1,3 +1,8 @@
+/*input
+2
+2 5
+1 1000000000
+*/
 //CHDOGS CC
 #include<stdio.h>
 #include<algorithm>

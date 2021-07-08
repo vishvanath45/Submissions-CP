@@ -21,8 +21,8 @@ while(++i<t)
 	cin>>xx;
 if(i==0)
 {
-	pos=1;
-	count++;
+	pos=0;
+	count=0;
 	min=xx;
 }
 else
@@ -43,7 +43,7 @@ else if(xx==min)
 if(count>0)
 cout<<"Still Rozdil";
 else
-cout<<pos;
+cout<<pos+1;
 
 return 0;
 }

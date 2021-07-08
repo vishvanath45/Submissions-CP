@@ -1,5 +1,90 @@
 //ex SEPT16 cc
-#include<stdio.h>
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int player;
+        cin>>player;
+        int points[101]={0};
+
+        for(int i=0; i<player; i++)
+        {
+            int nocookie;
+            cin>>nocookie;
+            int papa;
+            int localarr[6]= {0};
+            for(int j=0; j<nocookie; j++)
+            {
+                cin>>papa;
+                localarr[papa-1]=1;
+            }
+            int diff=0;
+
+            for(int j=0; j<6; j++)
+                diff+=localarr[j];
+
+
+            if(diff==4)
+                points[i]+=1;
+            else if(diff==5)
+                points[i]+=2;
+            else if(diff==6)
+                points[i]+=4;
+
+
+            points[i]+=nocookie;
+        }
+        /*cout<<"$%%^%%$^\n";
+
+        for(int j=0;j<player;j++)
+        {
+            cout<<points[j]<<"$$\n";
+        }*/
+        int maxi=points[0];
+        int maxpos=0;
+        for(int j=0;j<player;j++)
+        {
+        if(points[j]>maxi)
+        {
+        maxpos=j;
+        maxi=points[j];
+        }
+        }
+        sort(points,points+player);
+
+        if(points[player-1]==points[player-2])
+        cout<<"tie\n";
+        else if(maxpos==0)
+        cout<<"chef\n";
+        else
+        cout<<maxpos+1<<"\n";
+
+    }
+
+
+
+    return 0;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*#include<stdio.h>
 #include<algorithm>
 using namespace std;
 #include<iostream>
@@ -97,3 +182,4 @@ else
 return 0;
 
 }
+*/
